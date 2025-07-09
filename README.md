@@ -1,123 +1,113 @@
-# Loyal Automotive 🚗
+# 🚗 Loyal Automotive
 
-An online web application for managing bike service bookings, spare parts, users, and mechanics. Built using **Flask**, **SQLite**, and **Bootstrap**.
+**Loyal Automotive** is a web application for managing bike service bookings, spare parts, users, and mechanics. Built using **Flask**, **SQLite**, and **Bootstrap**, this system supports role-based access for Admins, Customers, and Mechanics.
+
+---
 
 ## 🛠️ Features
 
-- ✅ User Registration & Login (Role-based access: Admin, Customer, Mechanic)
-- 🧾 Book Bike Service
-- 🛒 Spare Parts Store (with images, stock, price, and description)
-- ❤️ Add to Wishlist / Add to Cart
+- 🔐 User Registration & Login (Role-based: Admin, Customer, Mechanic)
+- 🧾 Book Bike Services
+- 🛒 Spare Parts Store (with images, stock, price & description)
+- 💖 Wishlist & Cart System
 - 📦 Order Management
-- ⚙️ Admin Dashboard to manage:
-  - Users
-  - Bookings
+- ⚙️ Admin Dashboard:
+  - Manage Users
+  - View Bookings
   - Low Stock Alerts
   - Add Spare Parts
-- 👨‍🔧 Mechanic Dashboard (View/Update assigned services)
+- 👨‍🔧 Mechanic Dashboard (View/Update Assigned Services)
 - 👤 User Dashboard & Profile Management
+- 💳 **Payment Integration** *(Coming Soon)*
 
-- 🔒 User Authentication (Login/Register)
-- 🛠️ Spare Parts Browsing & Cart System
-- 📝 Booking Management
-- 💳 Payment Integration *(Planned)*
+---
 
+## 💻 Tech Stack
 
-## 🛠️ Tech Stack
+- **Backend**: Python (Flask)
+- **Frontend**: HTML, CSS, Bootstrap 5, Jinja2
+- **Database**: SQLite
+- **Authentication**: Flask-Login
 
-- Python (Flask)
-- HTML, CSS, Bootstrap 5
-- SQLite (Database)
-- Flask-Login (User Authentication)
-- Jinja2 (Templating)
+---
 
 ## 📦 Installation
 
-1. Clone the repo:
+1. **Clone the repository**:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/loyal-automotive.git
+   git clone https://github.com/Anusreemanoj1/loyal-automotive.git
    cd loyal-automotive
 
-## 📁 Project Structure
+python -m venv venv
+venv\Scripts\activate   # On Windows
 
-loyal-automotive/
-│
-├── app.py # Main Flask application
-├── models.py # Database models
-├── forms.py # Flask-WTForms
-├── requirements.txt # Python dependencies
-├── static/
-│ └── images/ # Spare part images
-├── templates/
-│ ├── index.html
-│ ├── login.html
-│ ├── register.html
-│ ├── spare_parts.html
-│ └── ... # All HTML templates
-├── database/
-│ └── loyalautomotive.db # SQLite database file
-└── README.md
-
-shell
-Copy
-Edit
-
-## 📸 Screenshots
-
-### 🏠 Home Page
-![Home Page](screenshots/home%20page.png)
-
-### 🔐 Login Page
-![Login Page](screenshots/login%20page.png)
-
-### 🧑 User Dashboard
-![User Dashboard](screenshots/user%20page.png)
-
-### 🛠️ Admin Dashboard
-![Admin Dashboard](screenshots/admin%20dashboard%20page.png)
-
-### ➕ Add Spare Parts Page
-![Add Spare Parts](screenshots/add%20spare%20parts%20page.png)
-
-### 🧰 Spare Parts View Page
-![Spare Parts View](screenshots/spare%20parts%20view%20page.png)
-
-### 🛒 Cart Page
-![Cart Page](screenshots/cart%20page.png)
-
-### 💖 Wishlist Page
-![Wishlist Page](screenshots/wishlist%20page.png)
-
-### 📦 Booking Service Page
-![Booking Service](screenshots/booking%20service%20page.png)
-
-### 📅 Booking Management Page
-![Booking Page](screenshots/booking%20page.png)
-
-### ⚠️ Low Stock Page
-![Stock Page](screenshots/stock%20page.png)
-
-
-## ▶️ Running the App
-
-```bash
-# Step 1: Install dependencies
 pip install -r requirements.txt
 
-# Step 2: Run the app
 python app.py
+
 Email: admin@example.com
 Password: admin123
 
-## ✅ Code Push to GitHub – Step-by-Step
+loyal-automotive/
+├── app.py                 # Main Flask application
+├── models.py              # SQLAlchemy models
+├── forms.py               # Flask-WTF forms
+├── requirements.txt       # Python dependencies
+├── static/
+│   └── images/            # Spare part images
+├── templates/             # All HTML templates
+│   ├── index.html
+│   ├── login.html
+│   ├── register.html
+│   ├── spare_parts.html
+│   └── ...
+├── database/
+│   └── loyalautomotive.db # SQLite database file
+└── README.md
 
-### 🟩 Step 1: Open your terminal in your project folder
+## 📸 Screenshots
 
-```bash
+### 🏠 Home Page  
+![Home Page](https://github.com/Anusreemanoj1/loyal-automotive/blob/main/screenshots/home%20page.png?raw=true)
+
+### 🔐 Login Page  
+![Login Page](https://github.com/Anusreemanoj1/loyal-automotive/blob/main/screenshots/login%20page.png?raw=true)
+
+### 🧑 User Dashboard  
+![User Dashboard](https://github.com/Anusreemanoj1/loyal-automotive/blob/main/screenshots/user%20page.png?raw=true)
+
+### 🛠️ Admin Dashboard  
+![Admin Dashboard](https://github.com/Anusreemanoj1/loyal-automotive/blob/main/screenshots/admin%20dashboard%20page.png?raw=true)
+
+### ➕ Add Spare Parts Page  
+![Add Spare Parts](https://github.com/Anusreemanoj1/loyal-automotive/blob/main/screenshots/add%20spare%20parts%20page.png?raw=true)
+
+### 🧰 Spare Parts View Page  
+![Spare Parts View](https://github.com/Anusreemanoj1/loyal-automotive/blob/main/screenshots/spare%20parts%20view%20page.png?raw=true)
+
+### 🛒 Cart Page  
+![Cart Page](https://github.com/Anusreemanoj1/loyal-automotive/blob/main/screenshots/cart%20page.png?raw=true)
+
+### 💖 Wishlist Page  
+![Wishlist Page](https://github.com/Anusreemanoj1/loyal-automotive/blob/main/screenshots/wishlist%20page.png?raw=true)
+
+### 📦 Booking Service Page  
+![Booking Service](https://github.com/Anusreemanoj1/loyal-automotive/blob/main/screenshots/booking%20service%20page.png?raw=true)
+
+### 📅 Booking Management Page  
+![Booking Page](https://github.com/Anusreemanoj1/loyal-automotive/blob/main/screenshots/booking%20page.png?raw=true)
+
+### ⚠️ Low Stock Page  
+![Stock Page](https://github.com/Anusreemanoj1/loyal-automotive/blob/main/screenshots/stock%20page.png?raw=true)
+
+# Navigate to your project folder
 cd "C:\Users\anusr\OneDrive\Desktop\loyal automotive"
+
+# Initialize Git and push to your GitHub repository
 git init
 git add .
 git commit -m "Initial commit - Loyal Automotive web app"
-git remote add origin https://github.com/Anusreemanoj1/loyal-automotive.git
 git branch -M main
+git remote add origin https://github.com/Anusreemanoj1/loyal-automotive.git
 git push -u origin main
+
